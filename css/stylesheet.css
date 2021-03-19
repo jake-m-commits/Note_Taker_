@@ -4,12 +4,17 @@ body {
     color: #286983;
 }
 
-.new_note {
+.new_note_save {
     background-color: #286983;
     color: #fffaf3;
 }
 
 .dark_theme {
     background-color: #575279;
+    color: #fffaf3;
+}
+
+.cancel {
+    background-color: #b4637a;
     color: #fffaf3;
 }
