@@ -8,6 +8,11 @@ nav {
     background-color: #E0DEF4;
 }
 
+main button {
+    border-radius: 15px;
+    padding: 15px;
+}
+
 .new_note_save {
     background-color: #286983;
     color: #fffaf3;
