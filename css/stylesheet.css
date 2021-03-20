@@ -1,7 +1,11 @@
 body {
     background-color: #faf4ed;
     font-family: 'Montserrat', sans-serif;
-    color: #286983;
+    color: #2A273F;
+}
+
+nav {
+    background-color: #E0DEF4;
 }
 
 .new_note_save {
