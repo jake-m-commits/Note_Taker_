@@ -2,6 +2,9 @@ body {
     background-color: #faf4ed;
     font-family: 'Montserrat', sans-serif;
     color: #2A273F;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+    grid-template-rows: repeat(7, 1fr);
 }
 
 nav {
