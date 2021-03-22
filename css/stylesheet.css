@@ -4,7 +4,11 @@ body {
     color: #2A273F;
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: repeat(4, 1fr) 0.5fr;
+    grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 main button {
@@ -36,10 +40,30 @@ nav {
 main {
     grid-column: 2/-1;
     grid-row: 2/5;
+    display: grid;
+    grid-template-rows: repeat(2, 0.5fr) 2fr 0.5fr;
+}
+
+#top_main {
+    grid-row: 1/2;
+}
+
+#top_button {
+    grid-row: 2/3;
+}
+
+#note_taker {
+    grid-row: 3/4;
+    padding: 15px;
+}
+
+#take_note {
+    padding: 15px;
+    border: 2px solid #eb6f92;
 }
 
 footer {
-    grid-column: 1/-1;
+    grid-column: 2/-1;
     grid-row: 5/-1;
     text-align: center;
 }
