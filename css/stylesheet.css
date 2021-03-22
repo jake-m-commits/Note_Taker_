@@ -14,6 +14,7 @@ body {
 main button {
     border-radius: 15px;
     padding: 15px;
+    color: #fffaf3;
 }
 
 header {
@@ -115,15 +116,12 @@ footer {
 
 .new_note_save {
     background-color: #286983;
-    color: #fffaf3;
 }
 
 .dark_theme {
     background-color: #575279;
-    color: #fffaf3;
 }
 
 .cancel_button {
     background-color: #b4637a;
-    color: #fffaf3;
 }
