@@ -26,6 +26,21 @@
 //      else
 //          cancel_button = false
 //  if (cancel_button is true)
-//      assign css note_taker with display: none
-//      assign css bottom_button with display: none
+//      assign css note_taker with visibility:hidden
+//      assign css bottom_button with visibility:hidden
 
+//define new note function
+//  let clear_note = none
+//  if (new note button is toggled)
+//      if clear_note === none
+//          clear_note = false
+//      else if clear_note === false
+//          clear_note = true
+//      else
+//          clear_note = none
+//  if (cancel_button === true) and (clear_note === false)
+//      assign css note_taker with visibility:visible
+//      assign css bottom_button with visibility:visible
+//      assign cancel_button with false
+//  else if (cancel_button === false) and (clear_note === true)
+//      clear textarea
