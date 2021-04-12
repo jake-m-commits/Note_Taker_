@@ -8,7 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #2A273F;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 0.5fr repeat(3, 1fr) 0.5fr;
     margin: 0;
     padding: 0;
@@ -20,13 +20,6 @@ main button {
     border-radius: 15px;
     padding: 15px;
     color: #fffaf3;
-}
-
-header #nav_list {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
 }
 
 header h1 {
