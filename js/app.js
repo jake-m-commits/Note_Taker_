@@ -4,6 +4,8 @@ const new_note_btn = document.querySelector("#new_note");
 const save_btn = document.querySelector("#save");
 const cancel_btn = document.querySelector("#cancel");
 let hidden_elements = null;
+const notesArray = [{title:"note one", body:"this is my first note"},
+                    {title:"note two", body:"this is my second note"}];
 
 function theme() {
     if (dark_theme_btn.textContent === "Dark Theme") {
