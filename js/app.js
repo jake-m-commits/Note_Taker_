@@ -1,4 +1,10 @@
 // js content --- button functionality
+const dark_theme_btn = document.querySelector("#dark");
+const new_note_btn = document.querySelector("#new_note");
+const save_btn = document.querySelector("#save");
+const cancel_btn = document.querySelector("#cancel");
+
+
 
 //define dark theme function
 //  let button = false
