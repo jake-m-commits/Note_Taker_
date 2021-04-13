@@ -4,7 +4,21 @@ const new_note_btn = document.querySelector("#new_note");
 const save_btn = document.querySelector("#save");
 const cancel_btn = document.querySelector("#cancel");
 
+function theme() {
+    if (dark_theme_btn.textContent === "Dark Theme") {
+        document.body.style.backgroundColor = "#191724";
+        document.body.style.color = "#e0def4";
+        document.querySelector("#nav_list").style.backgroundColor = "#555169"
+        dark_theme_btn.textContent = "Light Theme";
+    } else {
+        document.body.style.backgroundColor = "#faf4ed";
+        document.body.style.color = "#2A273F";
+        document.querySelector("#nav_list").style.backgroundColor = "#E0DEF4"
+        dark_theme_btn.textContent = "Dark Theme";
+    }
+}
 
+dark_theme_btn.addEventListener('click', theme)
 
 //define dark theme function
 //  let button = false
