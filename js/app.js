@@ -3,6 +3,7 @@ const dark_theme_btn = document.querySelector("#dark");
 const new_note_btn = document.querySelector("#new_note");
 const save_btn = document.querySelector("#save");
 const cancel_btn = document.querySelector("#cancel");
+let hidden_elements = null;
 
 function theme() {
     if (dark_theme_btn.textContent === "Dark Theme") {
@@ -20,7 +21,23 @@ function theme() {
     }
 }
 
-dark_theme_btn.addEventListener('click', theme)
+function cancel() {
+    document.getElementById("note_taker").style.visibility = "hidden";
+    document.getElementById("bottom_button").style.visibility = "hidden";
+    hidden_elements = true;
+}
+
+function new_note() {
+    if (hidden_elements === true) {
+        document.getElementById("note_taker").style.visibility = "initial";
+        document.getElementById("bottom_button").style.visibility = "initial";
+        hidden_elements = false;
+    }
+}
+
+dark_theme_btn.addEventListener('click', theme);
+cancel_btn.addEventListener('click', cancel);
+new_note_btn.addEventListener('click', new_note);
 
 //define dark theme function
 //  let button = false
