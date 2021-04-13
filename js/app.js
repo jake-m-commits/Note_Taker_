@@ -32,6 +32,8 @@ function new_note() {
         document.getElementById("note_taker").style.visibility = "initial";
         document.getElementById("bottom_button").style.visibility = "initial";
         hidden_elements = false;
+    } else if (hidden_elements === false) {
+        document.getElementById("take_note").value = "";
     }
 }
 
