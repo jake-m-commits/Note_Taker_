@@ -8,11 +8,13 @@ function theme() {
     if (dark_theme_btn.textContent === "Dark Theme") {
         document.body.style.backgroundColor = "#191724";
         document.body.style.color = "#e0def4";
+        document.querySelector("#take_note").style.backgroundColor = "#c4a7e7";
         document.querySelector("#nav_list").style.backgroundColor = "#555169"
         dark_theme_btn.textContent = "Light Theme";
     } else {
         document.body.style.backgroundColor = "#faf4ed";
         document.body.style.color = "#2A273F";
+        document.querySelector("#take_note").style.backgroundColor = "white";
         document.querySelector("#nav_list").style.backgroundColor = "#E0DEF4"
         dark_theme_btn.textContent = "Dark Theme";
     }
