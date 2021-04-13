@@ -3,6 +3,7 @@ const dark_theme_btn = document.querySelector("#dark");
 const new_note_btn = document.querySelector("#new_note");
 const save_btn = document.querySelector("#save");
 const cancel_btn = document.querySelector("#cancel");
+const sidebar = document.querySelector("#save_notes_here")
 let hidden_elements = null;
 const notesArray = [{title:"note one", body:"this is my first note"},
                     {title:"note two", body:"this is my second note"}];
@@ -39,9 +40,30 @@ function new_note() {
     }
 }
 
+function addListItem(title) {
+    const ul = document.getElementById("save_notes_here");
+    let li = document.createElement("li");
+    li.appendChild(document.createTextNode(title));
+    ul.appendChild(li);
+}
+
+function save() {
+    if (document.getElementById("take_note").value != "") {
+        user = prompt("Enter a title for your note: ");
+        notesArray.push({title:user, body:(document.getElementById("take_note").value)});
+        addListItem(user);
+        alert(`The note "${user}" has been successfully saved!`);
+    }
+}
+
+function note_clicked() {
+
+}
+
 dark_theme_btn.addEventListener('click', theme);
 cancel_btn.addEventListener('click', cancel);
 new_note_btn.addEventListener('click', new_note);
+save_btn.addEventListener('click', save);
 
 //define dark theme function
 //  let button = false
