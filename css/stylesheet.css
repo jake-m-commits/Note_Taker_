@@ -22,7 +22,7 @@ main button {
     color: #fffaf3;
 }
 
-header h1 {
+header h1, nav h1 {
     text-align: center;
 }
 
