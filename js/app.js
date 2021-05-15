@@ -5,8 +5,8 @@ const save_btn = document.querySelector("#save");
 const cancel_btn = document.querySelector("#cancel");
 let hidden_elements = null;
 const notesArray = [
-  { title: "note one", body: "this is my first note" },
-  { title: "note two", body: "this is my second note" },
+  { title: "python notes", body: "This is my first note!" },
+  { title: "javascript notes", body: "This is my second note..." },
 ];
 
 function theme() {
