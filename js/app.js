@@ -63,7 +63,7 @@ function save() {
 document
   .getElementById("save_notes_here")
   .addEventListener("click", function (e) {
-    if (e.target && e.target.nodeName == "LI") {
+    if (e.target && e.target.nodeName == "li") {
       alert(`Note: ${e.target.textContent} has been selected!`);
     }
     for (let item of notesArray) {
