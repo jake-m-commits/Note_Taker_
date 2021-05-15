@@ -16,7 +16,7 @@ function theme() {
     document.querySelector("#take_note").style.backgroundColor = "#c4a7e7";
     document.querySelector("#nav_list").style.backgroundColor = "#555169";
     dark_theme_btn.textContent = "Light Theme";
-  } else {
+  } else if (dark_theme_btn.textContent === "Light Theme") {
     document.body.style.backgroundColor = "#faf4ed";
     document.body.style.color = "#2A273F";
     document.querySelector("#take_note").style.backgroundColor = "white";
