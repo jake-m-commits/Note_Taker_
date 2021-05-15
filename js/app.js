@@ -38,6 +38,8 @@ function new_note() {
     hidden_elements = false;
   } else if (hidden_elements === false) {
     document.getElementById("take_note").value = "";
+  } else {
+    document.getElementById("take_note").value = "";
   }
 }
 
