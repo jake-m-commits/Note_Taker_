@@ -5,8 +5,8 @@ const save_btn = document.querySelector("#save");
 const cancel_btn = document.querySelector("#cancel");
 let hidden_elements = null;
 const notesArray = [
-  { title: "note one", body: "this is my first note" },
-  { title: "note two", body: "this is my second note" },
+  { title: "python notes", body: "This is my first note!" },
+  { title: "javascript notes", body: "This is my second note..." },
 ];
 
 function theme() {
@@ -37,6 +37,8 @@ function new_note() {
     document.getElementById("bottom_button").style.visibility = "initial";
     hidden_elements = false;
   } else if (hidden_elements === false) {
+    document.getElementById("take_note").value = "";
+  } else {
     document.getElementById("take_note").value = "";
   }
 }
